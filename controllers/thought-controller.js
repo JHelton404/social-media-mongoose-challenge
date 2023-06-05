@@ -9,9 +9,11 @@ module.exports = {
         thoughts
       }
       return res.json(thoughtObj)
-    })
+    }
+  )
+ },
     
-  getSingleThought(req, res); {
+  getSingleThought(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .select('-__v')
       .then((thought) => 
@@ -20,8 +22,7 @@ module.exports = {
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
-  }
- },
+  },
 
   async createThought(req, res) {
     try {
