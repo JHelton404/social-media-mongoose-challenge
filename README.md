@@ -16,7 +16,7 @@ Use your terminal to open on the root file of the repository.
 
 Type 'npm install' in order to obtain correct node packages.
 
-Type 'npm server.js' in order to launch the server.
+Type 'node server.js' in order to launch the server.
 
 The server should now be listening.
 
